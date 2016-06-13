@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-          crossorigin="anonymous">
-    <link rel='stylesheet' href='../stylesheets/style.css' />
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"
-              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-              crossorigin="anonymous"></script>
-    <script src="../javascripts/nav.js"></script>
-    <title>Eldia</title>
-    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
-    <script src="../javascripts/dietisten.js"></script>
+
+    <!-- cdn jQ      --><script   src="https://code.jquery.com/jquery-2.2.4.min.js"
+                        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                        crossorigin="anonymous"></script>
+    <!-- my js       --><script src="../javascripts/nav.js"></script>
+    <!-- my title    --><title>Eldia</title>
+    <!-- my favicon  --><link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+    <!-- js this page--><script src="../javascripts/dietisten.js"></script>
+    <!-- bootstrap   --><link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- bootstrap   --><script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <!-- my css      --><link rel='stylesheet' href='../stylesheets/style.css' />
 </head>
 <body>
 <h1>Eerstelijns Di&euml;tisten Regio Arnhem</h1>
@@ -25,32 +25,52 @@
     <div> <!-- subheader and apples -->
     <h2>De di&euml;tisten aangesloten bij Eldia</h2>
     <div class="flexboxLocations">
-        <button class="notgreen">Arnhem</button>
-        <button class="notgreen">Bemmel</button>
-        <button class="notgreen">Didam</button>
-        <button class="notgreen">Dieren</button>
-        <button class="notgreen">Doorwerth</button>
-        <button class="notgreen">Driel</button>
-        <button class="notgreen">Duiven</button>
-        <button class="notgreen">Elst</button>
-        <button class="notgreen">Gendt</button>
-        <button class="notgreen">Giesbeek</button>
-        <button class="notgreen">Herveld</button>
-        <button class="notgreen">Herwen</button>
-        <button class="notgreen">Heteren</button>
-        <button class="notgreen">Huissen</button>
-        <button class="notgreen">Oosterbeek</button>
-        <button class="notgreen">Opheusden</button>
-        <button class="notgreen">Rheden</button>
-        <button class="notgreen">Tolkamer</button>
-        <button class="notgreen">Velp</button>
-        <button class="notgreen">Westervoort</button>
-        <button class="notgreen">Zevenaar</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Arnhem</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Bemmel</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Didam</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Dieren</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Doorwerth</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Driel</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Duiven</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Elst</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Gendt</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Giesbeek</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Herveld</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Herwen</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Heteren</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Huissen</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Oosterbeek</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Opheusden</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Rheden</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Tolkamer</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Velp</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Westervoort</button>
+        <button class="notgreen" data-toggle="modal" data-target="#myModal">Zevenaar</button>
     </div> <!-- end of flexboxLocations -->
     </div> <!-- end of subheader and apples -->
-    <div class="target">
+</div> <!-- end of wrapper -->
 
-    </div> <!-- end of target2 -->
-</div> <!-- end of wrapper
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Di&euml;tisten in uw plaats:</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 </body>
 </html>
