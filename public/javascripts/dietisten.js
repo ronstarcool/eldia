@@ -13,7 +13,7 @@ var d = [
         loc: ['Arnhem']
     },
     {
-        name: 'Diëtist Ronald',
+        name: 'Di&euml;tist Ronald',
         website: 'http://dietistronald.nl/',
         tel: '06-51004363',
         loc: ['Arnhem']
@@ -147,13 +147,13 @@ $(document).ready(function(){
     // show results on click
     $('.flexboxLocations button').on('click', function() {
         $('.flexboxLocations button').removeClass('green verygreen');
-        $('.target').empty();
+        $('.modal-body').empty();
         var pick = this.innerHTML;
         console.log(pick);
         d.forEach(function(x){
             if(x.loc.includes(pick)){
                 console.log(x.name);
-                $('.target').append('<a target="_blank" href="' + x.website + '"><button class="result">' + x.name + '</button></a>')
+                $('.modal-body').append('<a target="_blank" href="' + x.website + '"><button class="result">' + x.name + '</button></a>')
             }
         });
     });
