@@ -151,7 +151,11 @@ $(document).ready(function(){
         var pick = this.innerHTML;
         console.log(pick);
         d.forEach(function(x){
+<<<<<<< HEAD
             if(x.loc.includes(pick)){
+=======
+            if(x.loc.indexOf(pick) !== -1){
+>>>>>>> gh-pages
                 console.log(x.name);
                 $('.modal-body').append('<a target="_blank" href="' + x.website + '"><button class="result">' + x.name + '</button></a>')
             }
