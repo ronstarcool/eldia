@@ -1,6 +1,4 @@
-* {
-    border: 1px solid red;
-}
+
 
 html,
 body {
@@ -71,7 +69,7 @@ h2 {
     flex-flow: row wrap;
     height: 320px;
     width: 800px;
-    border: 2px solid yellow;
+    border: 0px solid yellow;
 }
 
 .flexboxLocations button {
