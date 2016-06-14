@@ -1,11 +1,16 @@
 * {
-  margin: 0;
+  margin: 1px;
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  border: 2px solid blue;
+  height: 100%;
 }
 
 h1 {
@@ -39,10 +44,6 @@ nav a:active {
   background-color: grey;
 }
 
-aside {
-  width: 40%;
-}
-
 .mainText {
   width: 80%;
   max-width: 900px;
@@ -62,17 +63,21 @@ h2 {
   border: 0px solid blue;
 }
 
-.wrapper {
+.wrapper { /*  container */
+  position: relative;
   display: flex;
   justify-content: space-around;
+  min-height: 100%;
+  border: 3px solid green;
+  padding-bottom: 60px;
 }
 
 .flexboxLocations {
   display: flex;
   flex-flow: row wrap;
-  height: 330px;
+  height: 320px;
   width: 800px;
-  border: 0px solid blue;
+  border: 1px solid yellow;
 }
 
 .flexboxLocations button {
@@ -94,20 +99,7 @@ h2 {
 }
 
 .verygreen {
-  background: url(/images/peergroen.png) no-repeat;
-}
-
-.target {
-  position: relative;
-  top: 65px;
-  width: 200px;
-  height: 400px;
-  display: inline-block;
-  border: 0px solid blue;
-}
-
-.target a {
-  all: unset;
+  background: url(../images/peergroen.png) no-repeat;
 }
 
 .result {
@@ -142,8 +134,17 @@ h2 {
 }
 
 .modal-dialog {
-  position: absolute;
-  top: 15%;
-  left: calc(50% - 300px);
-  margin: 0 auto;
+  margin-top: 15%;
 }
+
+footer {
+  border: 2px solid #0D73C3;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+}
+

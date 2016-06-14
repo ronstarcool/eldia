@@ -151,7 +151,7 @@ $(document).ready(function(){
         var pick = this.innerHTML;
         console.log(pick);
         d.forEach(function(x){
-            if(x.loc.includes(pick)){
+            if(x.loc.indexOf(pick) !== -1){
                 console.log(x.name);
                 $('.modal-body').append('<a target="_blank" href="' + x.website + '"><button class="result">' + x.name + '</button></a>')
             }
