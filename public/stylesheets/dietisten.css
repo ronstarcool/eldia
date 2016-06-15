@@ -1,5 +1,3 @@
-
-
 html,
 body {
     margin:0;
@@ -7,6 +5,7 @@ body {
     height:100%;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+/* make footer stick */
 #container {
     min-height:100%;
     position:relative;
@@ -35,7 +34,20 @@ body {
 h1 {
     text-align: center;
 }
-
+h2 {
+    text-align: center;
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        border: 0px solid blue;
+        margin: 0px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+}
+/* nav */
 nav {
     background-color: #0D73C3;
     display: flex;
@@ -63,9 +75,19 @@ nav a:active {
     background-color: grey;
 }
 
-h2 {
-    text-align: center;
+@media (max-width: 480px) {
+    nav {
+        background-color: #0D73C3;
+    }
+    nav a {
+        height: 25px;
+        padding: 4px;
+    }
 }
+
+/* end of nav */
+
+
 
 .flexboxLocations {
     margin: 0 auto;
@@ -97,6 +119,23 @@ h2 {
 
 .verygreen {
     background: url(../images/peergroen.png) no-repeat;
+}
+
+@media (max-width: 480px) {
+    .flexboxLocations {
+        width: 250px;
+        height: 300px;
+        justify-content: space-around;
+
+    }
+    .flexboxLocations button {
+        background: none;
+        width: 100px;
+        height: 22px;
+        padding: 2px;
+        border: 2px solid #0D73C3;
+        box-shadow: 1px 2px;
+    }
 }
 
 /* overlay */
