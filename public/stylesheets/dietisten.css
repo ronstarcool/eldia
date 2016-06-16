@@ -86,7 +86,12 @@ nav a:active {
 }
 
 /* end of nav */
+/* pull menu on specialisations */
 
+.spec {
+    text-align: center;
+    margin-bottom: 15px;
+}
 
 
 .flexboxLocations {
@@ -123,7 +128,7 @@ nav a:active {
 
 @media (max-width: 480px) {
     .flexboxLocations {
-        width: 250px;
+        width: 240px;
         height: 300px;
         justify-content: space-around;
 

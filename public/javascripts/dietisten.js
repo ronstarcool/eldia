@@ -4,13 +4,15 @@ var d = [
         name: 'Almadis',
         website: 'http://www.almadis.nl/',
         tel: '026-3790567',
-        loc: ['Arnhem']
+        loc: ['Arnhem'],
+        spec: ['Diabetes Mellitus', 'COPD', 'CVRM']
     },
     {
         name: 'Sylvia van Daalen',
         website: 'http://www.dietistenpraktijksylviavandaalen.nl/',
         tel: "026-4434722",
-        loc: ['Arnhem']
+        loc: ['Arnhem'],
+        spec: ['COPD']
     },
     {
         name: 'Di&euml;tist Ronald',
@@ -149,9 +151,11 @@ $(document).ready(function(){
         $('.flexboxLocations button').removeClass('green verygreen');
         $('.modal-body').empty();
         var pick = this.innerHTML;
-        console.log(pick);
+        var spec = $('.spec option:selected').text();
+        console.log(spec);
         d.forEach(function(x){
-            if(x.loc.indexOf(pick) !== -1){
+            // check on location and check on specialisation. none selected: show all.
+            if(x.loc.indexOf(pick) !== -1 && (spec == 'geen keuze' || x.spec.indexOf(spec) !== -1) ){
                 console.log(x.name);
                 $('.modal-body').append('<a target="_blank" href="' + x.website + '"><button class="result">' + x.name + '</button></a>')
             }
